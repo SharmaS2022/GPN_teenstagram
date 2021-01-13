@@ -34,6 +34,9 @@ a {
   transition: all 0.2s;
 }
 
+a:visited {
+  color: #ffffff
+}
 a:focus, a:hover {
   color: #0085A1;
 }
