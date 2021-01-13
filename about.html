@@ -72,7 +72,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <h2> Upload </h2>
-        <h3> Photos you upload will appear in "Your Feed" along side others teens. You will be able to see how many people have seen and liked your photos along with other people.  </h3>
+        <p> Photos you upload will appear in "Your Feed" along side others teens. You will be able to see how many people have seen and liked your photos along with other people.  </p>
         <h2> Explore and Interact </h2>
         <p> The feed is interactive for real time feedback. Simply click the heart icon like images if someone's creation impresses you! </p>
         <h2> Feedback </h2>
@@ -81,7 +81,24 @@
     </div>
   </div>
   <hr>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <form name="sentMessage" id="contactForm" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Feedback</label>
+              <input type="text" class="form-control" placeholder="Type your feedback here" id="feedback" required data-validation-required-message="Please enter your name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-primary" id="sendMessageButton" style="font-size: 25px" >Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <!-- Footer -->
   <footer>
     <div class="container">
