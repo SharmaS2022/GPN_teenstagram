@@ -39,3 +39,24 @@
   }
 
 })(jQuery); // End of use strict
+
+function myFunction(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number').value = value;
+    }
+    
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number').value = value;
+    }
+}
+
