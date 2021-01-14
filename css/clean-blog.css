@@ -40,14 +40,14 @@ a:visited {
 a:focus, a:hover {
   color: #0085A1;
 }
-.fa {
+fa {
 	color: #db0909;
   font-size: 50px;
   cursor: pointer;
   user-select: none;
 }
 
-.fa:hover {
+fa:hover {
   color: #780606;
 }
 blockquote {
