@@ -51,11 +51,6 @@ a:focus, a:hover {
   color: #780606;
 }
 
-form {
- width: 900px;
- height: 500px;
-}
-
 blockquote {
   font-style: italic;
   color: #868e96;
@@ -425,4 +420,9 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+form {
+ width: 1000px;
+ height: 500px;
 }
