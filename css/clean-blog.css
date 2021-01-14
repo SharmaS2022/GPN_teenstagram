@@ -52,6 +52,12 @@ a:focus, a:hover {
   color: #780606;
 }
 
+input[type=text] {
+  padding:10px;
+  border:0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
 blockquote {
   font-style: italic;
   color: #868e96;
