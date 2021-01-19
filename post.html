@@ -45,6 +45,63 @@ function myFunction(x) {
     		document.getElementById('number').value = value;
     }
 }
+function myFunction(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number2').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number2').value = value;
+    }
+    
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number2').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number2').value = value;
+    }
+}
+function myFunction(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number3').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number3').value = value;
+    }
+    
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number3').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number3').value = value;
+    }
+}
+function myFunction(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number4').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number4').value = value;
+    }
+    
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number4').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number4').value = value;
+    }
+}
 </script>
 <style>
 .fa {
@@ -144,7 +201,7 @@ function myFunction(x) {
               <body>
 		    <div style = "position:relative; float:left; left:90px">
 			    <form>
-			    <input type="text" id="number" value="25"/>
+			    <input type="text" id="number2" value="25"/>
 			    </form>
 		    </div>
 
@@ -166,27 +223,6 @@ function myFunction(x) {
             		on January 14, 2021</p>
        </div>
         <hr>
-<script>
-function myFunction(x) {
-    if ( x.classList.contains( "fa-heart") ) {
-        x.classList.remove( "fa-heart" );
-        x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value--;
-    		document.getElementById('number').value = value;
-    }
-    
-    else {
-        x.classList.remove( "fa-heart-o" );
-        x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value++;
-    		document.getElementById('number').value = value;
-    }
-}
-</script>
         <div class="post-preview; center">
             <h2 class="post-title">
             <img src="img/hazard.jpg" alt = "Messi" height = "400" width = "720" align="bottom" /> 
@@ -195,7 +231,7 @@ function myFunction(x) {
               <body>
 		    <div style = "position:relative; float:left; left:90px">
 			    <form>
-			    <input type="text" id="number" value="25"/>
+			    <input type="text" id="number3" value="25"/>
 			    </form>
 		    </div>
 
@@ -225,7 +261,7 @@ function myFunction(x) {
               <body>
 		    <div style = "position:relative; float:left; left:90px">
 			    <form>
-			    <input type="text" id="number" value="25"/>
+			    <input type="text" id="number4" value="25"/>
 			    </form>
 		    </div>
 
