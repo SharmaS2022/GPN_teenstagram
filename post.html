@@ -166,6 +166,27 @@ function myFunction(x) {
             		on January 14, 2021</p>
        </div>
         <hr>
+<script>
+function myFunction(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number').value = value;
+    }
+    
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number').value = value;
+    }
+}
+</script>
         <div class="post-preview; center">
             <h2 class="post-title">
             <img src="img/hazard.jpg" alt = "Messi" height = "400" width = "720" align="bottom" /> 
