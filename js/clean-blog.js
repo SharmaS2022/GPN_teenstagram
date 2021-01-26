@@ -40,7 +40,7 @@
 
 })(jQuery); // End of use strict
 
-function myFunction(x) {
+function heartFunction(x) {
     if ( x.classList.contains( "fa-heart") ) {
         x.classList.remove( "fa-heart" );
         x.classList.add( "fa-heart-o" );
@@ -59,4 +59,17 @@ function myFunction(x) {
     		document.getElementById('number').value = value;
     }
 }
+
+function showPage() {
+  var T = document.getElementById("HiddenPage");
+  T.style.display = "block";
+}
+
+  
+
+
+
+
+
+
 
