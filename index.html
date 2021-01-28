@@ -74,7 +74,6 @@
       <div style = "position:relative; left: 200px">
       <img src="img/iPhone.jpg" alt = "iPhone Image" height = "700" align="right" /> 
       </div>
-      <p>
         <div style = "position:relative; left: 300px">
         <h2> Teenstagram </h2>
         </div>
@@ -111,13 +110,6 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
-          <form method="POST" enctype="multipart/form-data">
-            <br>
-                <input type="hidden" name="MAX_FILE_SIZE" value="10000000">
-                <input type="file" name="fileToUpload" id="fileToUpload" style="width: 60%">
-                <input type="submit" value="Upload Image" name="submit">
-          </form>
-          </p>
           <br>
           <div id="success"></div>
           <center>
@@ -127,7 +119,12 @@
     </div>
     </div>
   </div>
-  
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <br>
+                <input type="hidden" name="MAX_FILE_SIZE" value="10000000">
+                <input type="file" name="fileToUpload" id="fileToUpload" style="width: 60%">
+                <input type="submit" value="Upload Image" name="submit">
+          </form>
   <!-- Footer -->
   <footer>
     <div class="container">
