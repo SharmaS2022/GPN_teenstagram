@@ -346,7 +346,7 @@ header.masthead .post-heading .meta a {
   font-size: 1.5em;
   position: relative;
   z-index: 1;
-  padding: 0;
+  padding: 2px;
   resize: none;
   /* border: none; */
   border-radius: 0;
