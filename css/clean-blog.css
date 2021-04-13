@@ -348,7 +348,7 @@ header.masthead .post-heading .meta a {
   z-index: 1;
   padding: 0;
   resize: none;
-  border: none;
+  /* border: none; */
   border-radius: 0;
   background: none;
   box-shadow: none !important;
