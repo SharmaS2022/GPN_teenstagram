@@ -75,18 +75,11 @@
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
       <div style = "position:relative; top: 100px; left: 90px">
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form name="sentMessage" id="contactForm">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Username</label>
               <input type="text" class="form-control" placeholder="Username" id="name" required data-validation-required-message="Please enter your username.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls">
-              <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -97,26 +90,16 @@
               <p class="help-block text-danger"></p>
             </div>
           </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls">
-              <label> Bio </label>
-              <textarea rows="3" class="form-control" placeholder="Insert Bio" id="message" required data-validation-required-message="Please enter a bio."></textarea>
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
           <br>
           <div id="success"></div>
           <center>
-          <a href = "post.html" class="btn btn-primary" id="sendMessageButton" style="font-size: 25px" target="_blank"> Sign Up! </a>
+          <a href = "post.html" class="btn btn-primary" id="sendMessageButton" style="font-size: 25px" target="_blank"> LOGIN! </a>
           </center>
         </form>
     </div>
     </div>
   </div>
-            <form action="upload.php" method="POST" enctype="multipart/form-data">
-                <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload" name="submit">
-            </form>
+  
   <!-- Footer -->
   <footer>
     <div class="container">
