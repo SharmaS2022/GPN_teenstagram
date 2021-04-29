@@ -75,30 +75,44 @@
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
         <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
       <div style = "position:relative; top: 200px; left: 90px">
-        <form name="sentMessage" id="contactForm">
+        <form id="logininfo">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls">
               <label>Username</label>
               <input type="text" class="form-control" placeholder="Username" id="name" required data-validation-required-message="Please enter your username.">
-              <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Password</label>
               <input type="tel" class="form-control" placeholder="Password" id="phone" required data-validation-required-message="Please enter your password.">
-              <p class="help-block text-danger"></p>
             </div>
           </div>
           <br>
           <div id="success"></div>
           <center>
-          <a href = "post.html" class="btn btn-primary" id="sendMessageButton" style="font-size: 25px"> LOGIN! </a>
+          <a href = "post.html" class="btn btn-primary" id="sendMessageButton" style="font-size: 25px" onclick="LoginCheck()"> LOGIN! </a>
           </center>
         </form>
     </div>
     </div>
   </div>
+  
+  <script>
+    function LoginCheck() {
+  var x = document.getElementById("logininfo");
+  var password = "T33n$t@gr@m";
+  var username = "SharmaS2022";
+  if (x.elements[0].value !== username) {
+  	alert("Username entered is incorrect");
+    return false
+  }
+  if (x.elements[1].value !== password) {
+  	alert("Password entered is incorrect");
+    return false
+  }
+}
+  </script>
   
   <!-- Footer -->
   <footer>
