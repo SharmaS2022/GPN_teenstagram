@@ -103,6 +103,10 @@
   var x = document.getElementById("logininfo");
   var password = "T33n$t@gr@m";
   var username = "SharmaS2022";
+  if (x.elements[0].value !== username && x.elements[1].value !== password) {
+  	alert("Username and Password entered is incorrect");
+    return false
+  }
   if (x.elements[0].value !== username) {
   	alert("Username entered is incorrect");
     return false
