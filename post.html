@@ -46,63 +46,6 @@ function myFunction(x) {
     		document.getElementById('number').value = value;
     }
 }
-function myFunction2(x) {
-    if ( x.classList.contains( "fa-heart") ) {
-        x.classList.remove( "fa-heart" );
-        x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number2').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value--;
-    		document.getElementById('number2').value = value;
-    }
-    
-    else {
-        x.classList.remove( "fa-heart-o" );
-        x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number2').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value++;
-    		document.getElementById('number2').value = value;
-    }
-}
-function myFunction3(x) {
-    if ( x.classList.contains( "fa-heart") ) {
-        x.classList.remove( "fa-heart" );
-        x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number3').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value--;
-    		document.getElementById('number3').value = value;
-    }
-    
-    else {
-        x.classList.remove( "fa-heart-o" );
-        x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number3').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value++;
-    		document.getElementById('number3').value = value;
-    }
-}
-function myFunction4(x) {
-    if ( x.classList.contains( "fa-heart") ) {
-        x.classList.remove( "fa-heart" );
-        x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number4').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value--;
-    		document.getElementById('number4').value = value;
-    }
-    
-    else {
-        x.classList.remove( "fa-heart-o" );
-        x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number4').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value++;
-    		document.getElementById('number4').value = value;
-    }
-}
 </script>
 <style>
 .fa {
@@ -197,33 +140,35 @@ input[type=text] {
 		<br>
        </div> 
 	      <br> <br> <br>
-        <div class="post-preview; center" style="position:relative; left:850px; top:75px">
-            <h2 class="post-title">
-            <img src="img/messi.jpg" height = "500" width = "800" align="bottom" /> 
+        <div class="post-preview; center" style="position:relative; left:800px; top:75px; background-color: #DDD2D2; width:900px" >
+            <h2 class="post-title" style="text-align:center">
+            <img src="GramPhotos/A003001_resized.jpg" align="bottom" style="position:relative; top:35px"/> 
             </h2>
 			<fieldset disabled = "disabled">
 			      <body>
 
-			    <div style = "position:relative; top:5px; left:180px">
+			    <div style = "position:relative; top:40px; left:235px">
 				<i onclick="myFunction(this)" class="fa fa-heart-o"></i>
 			    </div>
-			    <div style = "position:relative; top: -42px; left:520px; color: #ffffff">
+			    <div style = "position:relative; top: -7px; left:575px; color: #000000">
 				<h3> Views </h3>
 			    </div>
-				    <div style = "position:relative; float:left; left:188px; top:-20px">
+				    <div style = "position:relative; float:left; left:243px; top:15px">
 					    <form>
-					    <input type="text" id="number" value="85" style="background-color:#080808; color: #F1F1F1"/>
+					    <input type="text" id="number" value="85" style="background-color:#DDD2D2; color: #000000"/>
 					    </form>
 				    </div>
 
-				    <div style = "position:relative; left:435px; top:-21px">
+				    <div style = "position:relative; left:490px; top:16px">
 					    <form>
-					    <input type="text" id="views" value="421" style="background-color:#080808; color: #F1F1F1"/>
+					    <input type="text" id="views" value="421" style="background-color:#DDD2D2; color: #000000"/>
 					    </form>
 				    </div>
 			      </body>
 			</fieldset>
+		<br>
        </div> 
+	      <br> <br> <br> 
         <div class="post-preview; center" style="position:relative; left:850px; top:75px">
             <h2 class="post-title">
             <img src="img/messi.jpg" height = "500" width = "800" align="bottom" /> 
