@@ -28,22 +28,25 @@
 	<!-- Please fix later and condense, variable change for each post (number,number2, number3, number4) -->
 <script>
 function myFunction(x) {
+	i = 0;
     if ( x.classList.contains( "fa-heart") ) {
         x.classList.remove( "fa-heart" );
         x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number').value, 10);
-    		value = isNaN(value) ? 0 : value;
+    		var value[i] = parseInt(document.getElementById('number').value, 10);
+    		value[i] = isNaN(value) ? 0 : value[i];
     		value--;
-    		document.getElementById('number').value = value;
+    		document.getElementById('number').value = value[i];
+	    i++;
     }
     
     else {
         x.classList.remove( "fa-heart-o" );
         x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number').value, 10);
-    		value = isNaN(value) ? 0 : value;
-    		value++;
-    		document.getElementById('number').value = value;
+    		var value[i] = parseInt(document.getElementById('number').value, 10);
+    		value[i] = isNaN(value) ? 0 : value[i];
+    		value[i]++;
+    		document.getElementById('number').value = value[i];
+	    i++;
     }
 }
 </script>
