@@ -27,7 +27,6 @@
 </head>
 	<!-- Please fix later and condense, variable change for each post (number,number2, number3, number4) -->
 <script>
-
 function myFunction(x) {
     if ( x.classList.contains( "fa-heart") ) {
         x.classList.remove( "fa-heart" );
@@ -45,6 +44,25 @@ function myFunction(x) {
     		value = isNaN(value) ? 0 : value;
     		value++;
     		document.getElementById('number').value = value;
+    }
+}
+	function myFunction2(x) {
+    if ( x.classList.contains( "fa-heart") ) {
+        x.classList.remove( "fa-heart" );
+        x.classList.add( "fa-heart-o" );
+    		var value = parseInt(document.getElementById('number2').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value--;
+    		document.getElementById('number2').value = value;
+    }
+
+    else {
+        x.classList.remove( "fa-heart-o" );
+        x.classList.add( "fa-heart" );
+    		var value = parseInt(document.getElementById('number2').value, 10);
+    		value = isNaN(value) ? 0 : value;
+    		value++;
+    		document.getElementById('number2').value = value;
     }
 }
 </script>
@@ -157,7 +175,7 @@ input[type=text] {
 			    </div>
 				    <div style = "position:relative; float:left; left:243px; top:15px">
 					    <form>
-					    <input type="text" id="number" value="39" style="background-color:#DDD2D2; color: #000000"/>
+					    <input type="text" id="number2" value="39" style="background-color:#DDD2D2; color: #000000"/>
 					    </form>
 				    </div>
 
