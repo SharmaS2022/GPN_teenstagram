@@ -31,7 +31,7 @@ function myFunction(x,id) {
     if ( x.classList.contains( "fa-heart") ) {
         x.classList.remove( "fa-heart" );
         x.classList.add( "fa-heart-o" );
-    		var value = parseInt(document.getElementById('number'+id).value, 10);
+    		var value = document.getElementById('number'+id).value;
     		value = isNaN(value) ? 0 : value;
     		value--;
     		document.getElementById('number'+id).value = value;
@@ -40,7 +40,7 @@ function myFunction(x,id) {
     else {
         x.classList.remove( "fa-heart-o" );
         x.classList.add( "fa-heart" );
-    		var value = parseInt(document.getElementById('number'+id).value, 10);
+    		var value = document.getElementById('number'+id).value;
     		value = isNaN(value) ? 0 : value;
     		value++;
     		document.getElementById('number'+id).value = value;
