@@ -34,6 +34,7 @@ function myFunction(x,id) {
     		var value = document.getElementById('number'+id).value;
     		value--;
     		document.getElementById('number'+id).value = value;
+	    sessionStorage.setItem(id, value);
     }
     
     else {
@@ -42,6 +43,7 @@ function myFunction(x,id) {
     		var value = document.getElementById('number'+id).value;
     		value++;
     		document.getElementById('number'+id).value = value;
+	    sessionStorage.setItem(id, value);
     }
 }
 
